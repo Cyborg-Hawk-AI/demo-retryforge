@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-slate-950 text-slate-100 antialiased;
+  }
+}
+
+@layer utilities {
+  .gradient-text {
+    @apply bg-gradient-to-r from-forge-400 to-emerald-300 bg-clip-text text-transparent;
+  }
+
+  .glass {
+    @apply border border-slate-800/80 bg-slate-900/60 backdrop-blur-sm;
+  }
+
+  .glow-forge {
+    box-shadow: 0 0 40px -10px rgba(20, 184, 166, 0.3);
+  }
+}
